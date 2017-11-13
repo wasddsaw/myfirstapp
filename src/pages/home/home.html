@@ -1,14 +1,35 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      myFirstApp
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="cards-bg">
+ 
+  <!-- start basic card -->
+  <ion-card>
+
+      <img src="assets/ionic.jpg">
+      
+      <ion-card-header>Ionic Framework</ion-card-header>
+        <ion-card-content>
+          <p align="justify">Ionic is open source 
+            framework used for developing mobile applications. 
+            It provides tools and services for 
+            building Mobile UI with native look and feel.</p>
+        </ion-card-content>
+   </ion-card>
+
+   <!-- start list card -->
+   <ion-card>
+      <ion-card-header>Ionic Templates</ion-card-header>
+          <ion-list>
+            <button ion-item (click)="newPage()"><ion-icon name='heart' item-start></ion-icon>Tabs App</button>
+            <ion-item><ion-icon name='logo-chrome' item-start></ion-icon>Blank App</ion-item>
+            <ion-item><ion-icon name='aperture' item-start></ion-icon>Side Menu App</ion-item>
+          </ion-list>
+   </ion-card>
+
 </ion-content>

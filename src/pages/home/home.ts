@@ -10,5 +10,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  newPage()
+  {
+    this.navCtrl.push('NewPage');
+  }
 
 }
